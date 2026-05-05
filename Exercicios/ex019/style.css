@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(202, 255, 202);
+    background-image: linear-gradient(to right, #146551, #007566)
+}
+
+h1#Principal {
+    background-color: #589A8D;
+    border-radius: 10px;
+    text-shadow: 2px 2px 4px #345c54;
+    color: white;
+    text-align: center;
+}
+
+.Subtitulo {
+    background-color: #589A8D;
+    border-radius: 10px;
+    text-shadow: 2px 2px 4px #345c54;
+    color: white;
+    text-align: center;
+    width: 400px;
+}
