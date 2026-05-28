@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas mais avançadas</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+        h1 {
+            font-family: "Passion One", sans-serif;
+            font-style: oblique;
+            font-size: 3em;
+            font-weight: 400;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            }
+
+        table {
+            border-collapse: collapse;
+            width: 50%;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 7px;
+            text-align: center;
+            background-color: rgb(245, 245, 245);
+        }
+
+        th {
+            border: 1px solid black;
+            padding: 7px;
+            background-color: gray;
+            color: white;
+        }
+
+        .numero {
+            text-align: right;
+            padding-left: 20px;
+        }
+        
+        #foot {
+            background-color: gray;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Bandeira</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Abreviação</th>
+                <th scope="col">População</th>
+                <th scope="col">Área (km)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="Bandeira_do_Acre.svg.png" alt=""></td>
+                <td>Acre</td>
+                <td>AC</td>
+                <td class="numero">830.018</td>
+                <td class="numero">164.122,2</td>
+            </tr>
+            <tr>
+                <td><img src="Bandeira_de_Alagoas.svg.webp" alt=""></td>
+                <td>Alagoas</td>
+                <td>AL</td>
+                <td class="numero">3.127.683</td>
+                <td class="numero">27.767,7</td>
+            </tr>
+            <tr>
+                <td><img src="Bandeira_do_Amapá.svg.webp" alt=""></td>
+                <td>Amapá</td>
+                <td>AP</td>
+                <td class="numero">733.759</td>
+                <td class="numero">142.814,6</td>
+            </tr>
+            <tr>
+                <td><img src="Bandeira_do_Amazonas.svg.webp" alt=""></td>
+                <td>Amazonas</td>
+                <td>AM</td>
+                <td class="numero">3.941.613</td>
+                <td class="numero">1.570.745,7</td>
+            </tr>
+            <tr>
+                <td><img src="Bandeira_da_Bahia.svg.webp" alt=""></td>
+                <td>Bahia</td>
+                <td>BA</td>
+                <td class="numero">14.141.626</td>
+                <td class="numero">564.692,7</td>
+            </tr>
+            <tr>
+                <td><img src="Bandeira_do_Ceará.svg.webp" alt=""></td>
+                <td>Ceará</td>
+                <td>CE</td>
+                <td class="numero">8.794.957</td>
+                <td class="numero">148.825,6</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td id="foot" scope="row"><strong>Total:</strong></td>
+                <td id="foot"><strong>Estados</strong></td>
+                <td id="foot"><strong>Abreviações</strong></td>
+                <td class="numero" id="foot"><strong>26.879.762,904683</strong></td>
+                <td class="numero" id="foot"><strong>2.618.968,5</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
