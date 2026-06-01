@@ -21,17 +21,28 @@
         table {
             border-collapse: collapse;
             width: 50%;
+            position: relative;
+            border: 1px solid black;
         }
 
         td {
             border: 1px solid black;
             padding: 7px;
             text-align: center;
-            background-color: rgb(245, 245, 245);
+            text-shadow: 1px 0px 20px rrgb(0, 0, 0)
+        }
+        
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: gray;
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: lightgray
         }
 
         th {
-            border: 1px solid black;
             padding: 7px;
             background-color: gray;
             color: white;
@@ -56,8 +67,9 @@
                 <th scope="col">Bandeira</th>
                 <th scope="col">Nome</th>
                 <th scope="col">Abreviação</th>
-                <th scope="col">População</th>
+                <th scope="col" style="width: 1px;">População</th>
                 <th scope="col">Área (km)</th>
+                
             </tr>
         </thead>
         <tbody>
@@ -102,6 +114,13 @@
                 <td>CE</td>
                 <td class="numero">8.794.957</td>
                 <td class="numero">148.825,6</td>
+            </tr>
+            <tr>
+                <td><img src="Bandeira_do_Distrito_Federal_(Brasil).svg.webp" alt=""></td>
+                <td>Distrito Federal</td>
+                <td>DF</td>
+                <td class="numero">2.817.381</td>
+                <td class="numero">5.822,1</td>
             </tr>
         </tbody>
         <tfoot>
