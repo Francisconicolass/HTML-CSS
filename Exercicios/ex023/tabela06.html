@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas responsivas</title>
+    <style>
+                body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+        
+        td {
+            border: 1px solid black;
+            padding: 15px;
+            width: 50px;
+            text-align: center;
+        }
+
+        th {
+            border: 1px solid black;
+            padding: 8px;
+            width: 100px;
+            text-align: center;
+        }
+
+        #numero {
+            text-align: right;
+            width: 50px;
+        }
+        
+        tr:nth-child(even) {
+            background-color: rgba(161, 161, 161, 0.87);
+            color: white;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.356);
+        }
+
+        .container {
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas Responsivas</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste temporibus fugiat vero, cumque expedita dolor animi. Voluptatibus ratione culpa ducimus corporis facilis a beatae sint repudiandae! Corporis quidem assumenda nisi?</p>
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th colspan="10">Produtos Vendidos</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Iphone</td>
+                    <td id="numero">02</td>
+                    <td id="numero">05</td>
+                    <td id="numero">12</td>
+                    <td id="numero">09</td>
+                    <td id="numero">12</td>
+                    <td id="numero">01</td>
+                    <td id="numero">23</td>
+                    <td id="numero">14</td>
+                    <td id="numero">12</td>
+                    <td id="numero">06</td>
+                </tr>
+                <tr>
+                    <td>Computador</td>
+                    <td id="numero">02</td>
+                    <td id="numero">05</td>
+                    <td id="numero">22</td>
+                    <td id="numero">51</td>
+                    <td id="numero">42</td>
+                    <td id="numero">15</td>
+                    <td id="numero">23</td>
+                    <td id="numero">14</td>
+                    <td id="numero">17</td>
+                    <td id="numero">04</td>
+                </tr>
+                <tr>
+                    <td id="numero">Ryzen</td>
+                    <td id="numero">05</td>
+                    <td id="numero">02</td>
+                    <td id="numero">15</td>
+                    <td id="numero">14</td>
+                    <td id="numero">21</td>
+                    <td id="numero">17</td>
+                    <td id="numero">19</td>
+                    <td id="numero">12</td>
+                    <td id="numero">03</td>
+                    <td id="numero">06</td>
+                </tr>
+                <tr>
+                    <td>Meu cu</td>
+                    <td id="numero">02</td>
+                    <td id="numero">02</td>
+                    <td id="numero">06</td>
+                    <td id="numero">15</td>
+                    <td id="numero">13</td>
+                    <td id="numero">03</td>
+                    <td id="numero">20</td>
+                    <td id="numero">17</td>
+                    <td id="numero">07</td>
+                    <td id="numero">03</td>
+                </tr>
+                <tr>
+                    <td>Meu pau</td>
+                    <td id="numero">04</td>
+                    <td id="numero">01</td>
+                    <td id="numero">12</td>
+                    <td id="numero">11</td>
+                    <td id="numero">04</td>
+                    <td id="numero">08</td>
+                    <td id="numero">09</td>
+                    <td id="numero">20</td>
+                    <td id="numero">25</td>
+                    <td id="numero">14</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
