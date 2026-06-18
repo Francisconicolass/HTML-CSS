@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        fieldset.torcer {
+            width: 500px;
+            background-color: rgba(231, 231, 231, 0.712);
+        }
+
+        legend.torcer {
+            background-color: rgb(139, 139, 139);
+            border: 1px solid rgba(0, 0, 0, 0.089);
+            border-radius: 5px;
+            padding: 2px;
+            color: white;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.199);
+        }
+
+        fieldset.hexa {
+            width: 500px;
+            background-color: rgba(231, 231, 231, 0.712);
+        }
+
+        legend.hexa {
+            background-color: rgb(139, 139, 139);
+            border: 1px solid rgba(0, 0, 0, 0.089);
+            border-radius: 5px;
+            padding: 2px;
+            color: white;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.199);
+        }
+    </style>
+</head>
+<body>
+    <h1>Formularios Copa do mundo</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset class="torcer">
+            <legend class="torcer">Time que você torce</legend>
+
+            <input type="checkbox" name="paris" id="iparis">
+            <label for="iparis">Paris</label><br>
+
+            <input type="checkbox" name="argentina" id="iargentina">
+            <label for="iargentina">Argentina</label><br>
+
+            <input type="checkbox" name="portugal" id="iportugal">
+            <label for="iportugal">Portugal</label><br>
+
+            <input type="checkbox" name="brasil" id="ibrasil">
+            <label for="ibrasil">Brasil</label><br>
+
+            <input type="checkbox" name="inglaterra" id="iinglaterra">
+            <label for="iinglaterra">Inglaterra</label><br>
+        </fieldset><br>
+
+        <fieldset class="hexa">
+            <legend class="hexa">O Brasil vai ganhar o Hexa?</legend>
+
+            <input type="radio" name="hexa" id="isim">
+            <label for="isim">Sim</label><br>
+
+            <input type="radio" name="hexa" id="inao">
+            <label for="inao">Não</label><br>
+
+            <input type="radio" name="hexa" id="ifinal">
+            <label for="ifinal">Vai chegar na final</label><br>
+
+            <input type="radio" name="hexa" id="isemi">
+            <label for="isemi">Vai chegar na semifinal</label>
+        </fieldset>
+
+    </form>
+</body>
+</html>
