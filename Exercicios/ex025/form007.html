@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        fieldset {
+            background-color: rgba(245, 245, 245, 0.589);
+        }
+
+        legend {
+            background-color: rgb(223, 223, 223);
+            border-radius: 5px;
+            padding: 3px;
+            box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.185);
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulario</h1>
+    <form action="cadastro.php" method="post">
+
+        <fieldset>
+            <legend>Envie sua mensagem</legend>
+            <p>
+                <label for="iestado">Estado:</label>
+                <select name="estado" id="iestado">
+                    <optgroup label="Nordeste">
+                        <option value="CE">Ceará</option>
+                        <option value="BA">Bahia</option>
+                        <option value="AL">Alagoas</option>
+                    </optgroup>
+                    <optgroup label="Norte">
+                        <option value="AC">Acre</option>
+                        <option value="AP">Amapá</option>
+                        <option value="PA">Pará</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <label for="ienviar">Pra onde vc quer enviar:</label>
+                <input type="text" name="enviar" id="ienviar" list="ilocais">
+                <datalist id="ilocais">
+                    <option>Fortaleza</option>
+                    <option>Salvador</option>
+                    <option>Maceió</option>
+                    <option>Rio Branco</option>
+                    <option>Macapá</option>
+                    <option>Belém</option>
+                </datalist>
+            </p>
+            <p>
+                <label for="imensagem">Mensagem:</label><br>
+                <textarea name="mensagem" id="imensagem" cols="30" rows="10">
+                </textarea>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
