@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
     <header>
         <h1>Quem ira ganhar a copa de 2026</h1>
-        <menu>
+        <i id="menu" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens">
             <ul>
                 <li><a href="#">Opção1</a></li>
                 <li><a href="#">Opção2</a></li>
@@ -27,5 +29,15 @@
             <p>consectetur adipisicing elit. Cumque, maxime. Odit aut adipisci officia nobis incidunt nulla omnis est dolorum consequuntur saepe aliquid nemo, totam ut ea beatae quibusdam deserunt? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione animi ipsa eaque cupiditate modi est maiores, possimus culpa beatae et quo quod non iste voluptatibus incidunt amet, qui esse necessitatibus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime eius architecto culpa, fugiat voluptatum quos dolorum atque voluptate, autem consequatur in aliquam, sint tempora quidem ut nisi? Doloremque, dicta voluptatem?</p>
         </article>
     </main>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block' 
+            }
+        }
+
+    </script>
 </body>
 </html>
