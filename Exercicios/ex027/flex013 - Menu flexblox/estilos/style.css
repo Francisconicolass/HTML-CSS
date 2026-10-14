@@ -17,15 +17,40 @@ body {
 header {
     background-color: gray;
     padding: 10px;
-    color: white;   
+    color: white;  
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > nav > a {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    margin: 4px;
+}
+
+header > nav > a:hover {
+    background-color: white;
+    color: black;
+    transition: background-color .5s; 
 }
 
 header > h1 {
     border: 1px dotted black;
+    flex: 0 0 250px
 }
 
 header > nav {
     border:  1px dotted black;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: end;
 }
 
 main {
