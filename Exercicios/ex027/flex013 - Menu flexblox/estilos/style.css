@@ -42,12 +42,12 @@ header > nav > a:hover {
 }
 
 header > h1 {
-    border: 1px dotted black;
-    flex: 0 0 250px
+    flex: 0 0 250px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.474);
+    font-size: 3em;
 }
 
 header > nav {
-    border:  1px dotted black;
     display: flex;
     flex-flow: row wrap;
     justify-content: end;
